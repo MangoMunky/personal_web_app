@@ -1,0 +1,104 @@
+body {
+    background-color: #243336;
+    color: white;
+    margin: 0;
+}
+.wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.title{
+    color: #f7ddbb;
+    font-family: monospace;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.introOne{
+    margin: 1%;
+    font-size: clamp(2.5rem, 1.0577rem + 5.7692vw, 6.25rem);
+}
+.introTwo{
+    margin: 1%;
+    font-size: clamp(2.5rem, 2.3077rem + 0.7692vw, 3rem);
+}
+
+.myWork{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5%;
+}
+.myWorkT{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0.5%;
+
+}
+
+.abtMe{
+    display: flex;
+    margin: 1%;
+    
+}
+.abtMeT{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5%;
+}
+
+
+
+
+
+.myWorkImg{
+    width: auto;
+    height: 100%;
+    max-height: 350px;
+    border-style: solid;
+    border-color: #d67f6c;
+    border-width: 3px;
+    border-radius: 10px;
+    margin: 0.5%;
+    
+}
+
+img.abtMeImg{
+    width: auto;
+    height: 100%;
+    max-height: 300px;
+    margin: 0.5%;
+    border-style: solid;
+    border-color: #d67f6c;
+    border-width: 3px;
+    border-radius: 10px;
+}
+
+hr.divisor{
+    border: 5px solid #a86658;
+}
+
+footer{
+    text-align: center;
+    background-color: #3d4858;
+    position: static;
+    width: 100%;
+    bottom: 0%;
+    padding: 1% 0px;
+}
+
+h3 {
+    font-size: clamp(2rem, 1.023rem + 4.89vw, 4.688rem);
+    margin: 1%;
+}
+
+p{
+    font-size: clamp(1.5rem, 1.318rem + 0.91vw, 2rem);
+    margin: 1%;
+}
