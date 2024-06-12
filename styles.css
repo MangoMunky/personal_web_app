@@ -15,6 +15,13 @@ body {
     margin: 1%;
 }
 
+@media screen and (max-width: 750px){
+    .myWorkT {
+        flex-direction: column;
+    }
+    
+}
+
 .navBar{
     background-color: #0000006c;
     
@@ -57,14 +64,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-bottom: 0.5%;
     margin: 0;
 }
 .myWorkT{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 1%;
+    width: 50%;
+    padding: 2rem;
     margin: 0;
 }
 
@@ -83,10 +90,8 @@ body {
 
 
 .myWorkImg{
-    max-width: 100%;
-    width: 522px;
+    width: 100%;
     height: auto;
-
     border-style: solid;
     border-color: #d67f6c;
     border-width: 3px;
