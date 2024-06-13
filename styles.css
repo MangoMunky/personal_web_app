@@ -1,4 +1,7 @@
-/* https://www.josephz.me/ */
+/* https://www.josephz.me/
+https://www.melaniedaveid.com/
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 
@@ -58,8 +61,7 @@ body{
 .contentGrid{
     text-align: center;
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .itmH{
@@ -79,6 +81,7 @@ body{
     text-decoration: none;
     color: white;
     transition: 0.2s ease-out;
+    max-width: 565px;
 }
 
 .gridItm:hover{
@@ -87,6 +90,6 @@ body{
 }
 
 .aboutMe{
-    width: 50vh;
-    min-width: 400px;
+    flex-basis: 50%;
+    min-width: 300px;
 }
