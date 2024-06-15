@@ -1,2 +1,3 @@
-# personal_web_app
-ICS4U1-1 assignment
+# My Personal Web app
+![Mobile preview of website](https://github.com/MangoMunky/personal_web_app/blob/main/github/mobileWebsitePreview.png?raw=true)
+Sclaes for desktop and mobile devices!
