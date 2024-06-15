@@ -1,129 +1,139 @@
-body {
-    background-color: #243336;
+/* https://www.josephz.me/
+https://www.melaniedaveid.com/
+https://jonlamb.com/?ref=onepagelove
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #111111;
     color: white;
+    font-family: "Raleway", sans-serif;
     margin: 0;
 }
 
-
-.wrap{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+::selection {
+    background: #3d1818;
+    color: #fde047;
 }
 
-.contentWrap{
-    margin: 1%;
+.bodyWrap{
+    padding: 0 0.75rem 0 0.75rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .navBar{
-    background-color: #0000006c;
-    
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #111111;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    height: 50%;
-    
+    justify-content: space-between;
+    flex-grow: 1;
+    border-bottom: 0.1rem solid #de303f;
+    padding: 1rem 0 1rem;
 }
-.navBar a{
-    background-color: #04AA6D;
-    padding: 1%;
-    margin: 0px 1% 0px 1%;
-    font-size: clamp(0.5rem, 0.3077rem + 0.7692vw, 1rem);
-    text-decoration: none;
+
+#navH{
+    font-size: 1.25rem;
+    margin: 0;
+    font-weight: bold;
     color: white;
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 
-.title{
-    color: #f7ddbb;
-    font-family: monospace;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-.introOne{
-    padding: 1%;
-    font-size: clamp(2.5rem, 1.0577rem + 5.7692vw, 6.25rem);
-    margin: 0;
-}
-.introTwo{
-    padding: 1%;
-    font-size: clamp(2.5rem, 2.3077rem + 0.7692vw, 3rem);
+
+.navP{
     margin: 0;
 }
 
-.myWork{
+.textSection{
+    /* display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr; */
+
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    padding-bottom: 0.5%;
-    margin: 0;
-}
-.myWorkT{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 1%;
-    margin: 0;
+    flex-direction: row;
+    padding: 1rem 0 1rem;
+    flex-wrap: wrap;
 }
 
-.abtMe{
-    display: flex;
-    padding-top: 0.5%;
+.textP{
     margin: 0;
+}
+.aboutMe{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.expContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.expContainer h1{
+    margin: 0;
+    padding: 0.5em;
+}
+
+.contentGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.lColumn{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 2em 0 2em;
+}
+.rColumn{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 2em 0 2em;
+}
+
+.itmH{
+    margin: 0;
+    font-size: 2.25rem;
+}
+.itmP{
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.img{
+    width: 100%;
+
+}
+
+.gridItm{
+    padding-bottom: 0.3rem;
+    margin: 0 0 1em;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s ease-out;
+    width: 100%;
     
 }
-.abtMeT{
-    display: flex;
-    flex-direction: column;
-    padding-right: 1%;
-    margin: 0;
+
+.gridItm:hover{
+    background-color: #de303f;
+    transition: 0.4s ease-out;
 }
 
 
-.myWorkImg{
-    max-width: 100%;
-    width: 522px;
-    height: auto;
-
-    border-style: solid;
-    border-color: #d67f6c;
-    border-width: 3px;
-    border-radius: 10px;
-}
-
-.abtMeImg{
-    width: auto;
-    height: 100%;
-    max-height: 300px;
-    border-style: solid;
-    border-color: #d67f6c;
-    border-width: 3px;
-    border-radius: 10px;
-}
-
-.divisor{
-    border: 5px solid #a86658;
-}
-
-footer{
-    text-align: center;
-    background-color: #3d4858;
-    position: static;
-    width: 100%;
-    bottom: 0%;
-    padding: 1% 0px;
-}
-
-h3 {
-    font-size: clamp(2rem, 1.023rem + 4.89vw, 4.688rem);
-    padding-bottom: 1%;
-    margin: 0;
-}
-
-p{
-    font-size: clamp(1.5rem, 1.318rem + 0.91vw, 2rem);
-    padding-top: 1%;
-    margin: 0;
-}

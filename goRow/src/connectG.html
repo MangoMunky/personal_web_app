@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goRow</title>
+    <link rel="icon" type="image/x-icon" href="../lib/gameCircle.ico">
+    <link rel="stylesheet" href="connectG.css">
+    <script src="index.js"></script>
+    <script src="connectG.js"></script>
+</head>
+
+<body>
+    <div id="myModal" class="modal">
+        <div class="modalContent">
+            <span id="winner"></span>
+        </div>
+    </div>
+
+    <div>
+        <h1 class="title">Connect 5</h1>
+    </div>
+    <div class="board-cont">
+        <div class="menu">
+            <a href="index.html" class="mainB">return home</a>
+            
+            <div class="curP" tabindex="0">
+                <h1 id="curP">current player is White</h1>
+            </div>
+            
+        </div>
+        
+        <div>
+            <div class="board-pos" id="board" title = "Game Board"></div>
+        </div>
+        
+    </div>
+    
+
+</body>
+
+<audio id="myAudio">
+    <source src="../lib/catsOnMars.mp3" type="audio/mpeg">
+
+    Your browser does not support the audio element.
+</audio>
+<audio id="mobS">
+    <source src="../lib/mobS.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+</html>
