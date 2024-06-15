@@ -3,66 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Szymon Boczon ICS4U1-1</title>
+    <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-
-
-
 <body>
-    <div class="wrap">
-        <div class="navBar">
-            <a href="index.html">Home</a>
-            <a href="">New Projects</a>
-        </div>
-        <header> 
-            <div class="title">
-                <h1 class="introOne">Hey!  I'm Szymon</h1>
-                <h2 class="introTwo">Here's my coding portfolio</h2>
-            </div>
-            <hr class="divisor">
-        <header>
-
-        <div class="contentWrap">
-            <section class="myWork">
+    <div class="bodyWrap">
+        <nav class="navBar">
+            <button id="navH" onclick="toTop()">Szymon Boczon</button>
+            <p class="navP">High School Student</p>
+            <P class="navP">Toronto, Ontario</P>
+        </nav>
+        <main>
+            <section class="textSection">
+                <div class="aboutMe">
+                    <p class="textP">ABOUT ME</p>
+                    <P class="textP">I'm currently a highschooler attending western technical commercial school and am in the robotics program. I
+                        like 3d modeling, plants, programming and excercising. In the future, I see myself working with plants and technology</P>
+                </div>
                 <div>
-                    <img class="myWorkImg" src="assets/commonFactor.png" alt="An image of my common factor code" width="522px" height="375px">
-                </div>
-                <div class="myWorkT">
-                    <h3>My Work</h3>
-                    <p>I started coding around 2021 during the pandemic, but I didn't really do any real projects past tutorials
-                        until around 2022. Around this time I started experimenting with Project Eulur which helped me more than any
-                        tutorial had so far. I made the first few projects using python That summer I got ambitious and decided to
-                        enroll in Harvards free online computer science course CS50. I completed the first 4 weeks. During this time
-                        I learnt to code in C and designed a credit card validator. However, got pretty burnt out. So I decided to
-                        take a break, until I took computer science the next year and participated in the Waterloo Coding Contest.
-                        This year I also took a computer science class and participated in the waterloo coding contest.</p>
+                    <p class="textP">Other</p>
                 </div>
             </section>
-            
-            
-            
-            <section class="abtMe">
-                <div class="abtMeT">
-                    <h3>About Me</h3>
-                    <p>I am currently a highschooler attending western technical commercial school and am in the robotics SHSM. I
-                        like to learn about a large variety of things, such as 3d modeling, nutrition, plants, programming and
-                        others. In the future, I see myself creating hardware to aid the growth of plants for home and commercial
-                        use from self taught experimenting.</p>
+
+            <div class="expContainer">
+                <h1>Projects</h1>
+                <div class="contentGrid">
+                    <ul class="lColumn">
+                        <a class="gridItm" href="https://github.com/MangoMunky">
+                            <img src="assets/githubPic.png" alt="Screenshot of github username" class="img">
+                            <h1 class="itmH">Github Page</h1>
+                            <p class="itmP">Source code to projects</p>
+                        </a>
+                        <a class="gridItm" href="index.html">
+                            <img src="assets/ominousRender.png" alt="picture of my 3d art" class="img">
+                            <h1 class="itmH">Blender Projects</h1>
+                            <p class="itmP">collection of my 3d art</p>
+                        </a>
+                    </ul>
+                    <ul class="rColumn">
+                        <a class="gridItm" href="./goRow/src/index.html">
+                            <img src="assets/goRowLogo.jpg" alt="Screenshot of goRow game" class="img">
+                            <h1 class="itmH">goRow</h1>
+                            <p class="itmP">My connect 5 game</p>
+                        </a>
+                    </ul>
                 </div>
-                <img class="abtMeImg" src="assets/ominousRender.png" alt="An ominous 3d render of a hexagonal prism" width="1920px" height="1080px">
-            </section>
-        </div>
-        
-
-
-        <footer>
-            <div>
-                <p>Created by: Szymon Boczon 2024-02-22 &nbsp Contact: @szymon.boczon@student.tdsb.on.ca</p>
             </div>
-        </footer>
-    </div>    
-
+            
+        </main>
+    </div>
 </body>
-
 </html>

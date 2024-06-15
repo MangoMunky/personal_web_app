@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goRow</title>
+    <link rel="icon" type="image/x-icon" href="../lib/gameCircle.ico">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+</head>
+
+<body id="body">
+    <div class="bodyWrapper">
+        <div class="title">
+            <h1>Connect 5</h1>
+        </div>
+    
+        <!--Container that holds buttons and popup-->
+        <div class="container" id="container">
+            <button id="oVOB" onclick="singleP('off')" class="btn" tabindex="0">1v1</button>
+            <button id="sR" type="submit" class="btn" onclick="openPopup()" tabindex="0">Settings</button>
+            <button id="botB" type="submit" onclick="singleP('on')" class="btn" tabindex="0">bot</button>
+    
+            <!--popup after pressing settings button-->
+            <div class="popup" id="popup">
+                <h2>TY ;)</h2>
+                <p>we got all ur deets</p>
+    
+                <!--Switches to turn on and off various settings-->
+                <label>
+                    <h2>SFX</h2>
+                    <input type="checkbox" id="cBSFX" checked onclick="sfxOO()">
+                    <span class="slider round"></span>
+                </label>
+    
+                <button class="btnC" type="button" onclick="closePopup()">OK</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

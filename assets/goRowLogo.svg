@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="201.15428mm"
+   height="137.01801mm"
+   viewBox="0 0 201.15428 137.018"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <rect
+       x="134.11227"
+       y="181.05156"
+       width="497.55652"
+       height="317.84607"
+       id="rect113" />
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter950"
+       x="-6.557296e-05"
+       y="-0.00022781039"
+       width="1.0001311"
+       height="1.0004556">
+      <feGaussianBlur
+         stdDeviation="0.0066271698"
+         id="feGaussianBlur952" />
+    </filter>
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-72.024284,-68.402677)">
+    <text
+       xml:space="preserve"
+       transform="matrix(0.8291971,0,0,1.9616162,-41.343895,-224.55151)"
+       id="text111"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:74.6667px;line-height:0;font-family:Gadugi;-inkscape-font-specification:'Gadugi Bold';white-space:pre;shape-inside:url(#rect113);display:inline;mix-blend-mode:normal;fill:#000000;filter:url(#filter950)"><tspan
+         x="134.11133"
+         y="201.64045"
+         id="tspan1393">g<tspan
+   style="fill:#6800b6"
+   id="tspan1391">o</tspan>Row</tspan></text>
+  </g>
+</svg>
