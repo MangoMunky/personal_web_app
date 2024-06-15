@@ -3,40 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Szymon Boczon - web portfolio</title>
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
-    <script src="index.js"></script>
+    
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="top"></div>
     <div class="bodyWrap">
-        <nav class="navBar">
-            <button id="navH" onclick="toTop()">Szymon Boczon</button>
-            <p class="navP">High School Student</p>
-            <P class="navP">Toronto, Ontario</P>
-        </nav>
+        <div class="title">
+            <a href="index.html">Szymon Boczon</a>
+        </div>
         <main>
-            <section class="textSection">
-                <div class="aboutMe">
-                    <p class="textP">ABOUT ME</p>
-                    <P class="textP">I'm currently a highschooler attending western technical commercial school and am in the robotics program. I
-                        like 3d modeling, plants, programming and excercising. In the future, I see myself working with plants and technology</P>
-                </div>
-                <div>
-                    <p class="textP">Other</p>
-                </div>
+            <section class="aboutMe">
+                <h1>
+                    <p class="textP">I am <span id="typewriter"></span></p>
+                </h1>
+                <p class="textP">I'm currently a highschooler attending western technical commercial school and am in the robotics program. I
+                        like 3d modeling, plants, programming and excercising. In the future, I see myself working with plants and technology</p>
             </section>
-
+            <div id="work"></div>
+            
+            <nav class="navBar">
+                <a href="#work">Work</a>
+                <a href="#contact">Contact</a>
+                <a href="#top">about me</a>
+            </nav>
             <div class="expContainer">
                 <h1>Projects</h1>
                 <div class="contentGrid">
                     <ul class="lColumn">
                         <a class="gridItm" href="https://github.com/MangoMunky">
                             <img src="assets/githubPic.png" alt="Screenshot of github username" class="img">
-                            <h1 class="itmH">Github Page</h1>
+                            <h1>Github Page</h1>
                             <p class="itmP">Source code to projects</p>
                         </a>
                         <a class="gridItm" href="index.html">
@@ -54,8 +57,16 @@
                     </ul>
                 </div>
             </div>
-            
         </main>
+        
     </div>
+    <footer id="contact">
+        <h1>Contact Me</h1>
+        <a href="mailto:boczonszymon@gmail.com">📧Email me</a>
+        <p>Want to work together? Don't hesitate to message me!</p>
+    </footer>
+
+    <script src="index.js"></script>
+
 </body>
 </html>

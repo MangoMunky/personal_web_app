@@ -1,6 +1,9 @@
 /* https://www.josephz.me/
 https://www.melaniedaveid.com/
 https://jonlamb.com/?ref=onepagelove
+
+also consider changing line-height property
+change images to webp for efficiency
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
@@ -14,6 +17,7 @@ body{
     color: white;
     font-family: "Raleway", sans-serif;
     margin: 0;
+    padding: 0;
 }
 
 ::selection {
@@ -27,22 +31,21 @@ body{
     flex-direction: column;
 }
 
-.navBar{
-    position: sticky;
-    top: 0;
-    z-index: 1;
+.title{
+    position: relative;
     width: 100%;
+    height: 2em;
     background-color: #111111;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     flex-grow: 1;
-    border-bottom: 0.1rem solid #de303f;
-    padding: 1rem 0 1rem;
+    padding: 0;
 }
 
-#navH{
+.title a{
+    text-decoration: none;
     font-size: 1.25rem;
     margin: 0;
     font-weight: bold;
@@ -52,29 +55,37 @@ body{
     cursor: pointer;
 }
 
-
-.navP{
-    margin: 0;
-}
-
-.textSection{
-    /* display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr; */
-
+.navBar{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+    background-color: #111111;
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+    border-bottom: 0.1rem solid #de303f;
     padding: 1rem 0 1rem;
-    flex-wrap: wrap;
+}
+.navBar a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: clamp(1rem, 0.8077rem + 0.7692vw, 1.5rem);
+    font-weight: bold;
 }
 
 .textP{
     margin: 0;
 }
 .aboutMe{
-    flex-basis: 50%;
-    min-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 0 1rem;
 }
 
 .expContainer{
@@ -87,6 +98,7 @@ body{
 .expContainer h1{
     margin: 0;
     padding: 0.5em;
+    font-size: clamp(2rem, 1.6154rem + 1.5385vw, 3rem);
 }
 
 .contentGrid{
@@ -106,20 +118,6 @@ body{
     padding: 0 2em 0 2em;
 }
 
-.itmH{
-    margin: 0;
-    font-size: 2.25rem;
-}
-.itmP{
-    margin: 0;
-    font-size: 1.25rem;
-}
-
-.img{
-    width: 100%;
-
-}
-
 .gridItm{
     padding-bottom: 0.3rem;
     margin: 0 0 1em;
@@ -128,7 +126,6 @@ body{
     color: white;
     transition: 0.2s ease-out;
     width: 100%;
-    
 }
 
 .gridItm:hover{
@@ -136,4 +133,38 @@ body{
     transition: 0.4s ease-out;
 }
 
+.gridItm h1{
+    margin: 0;
+    padding: 0;
+    font-size: 2.25rem;
+}
+.gridItm p{
+    margin: 0;
+    font-size: 1.25rem;
+}
 
+.img{
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #222529;
+}
+footer *{
+    margin: 0;
+}
+footer h1{
+    padding: 0.5em;
+}
+footer p{
+    padding: 0.5em;
+}
+footer a{
+    text-decoration: underline;
+    color: white;
+}
